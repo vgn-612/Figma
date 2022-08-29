@@ -1,0 +1,111 @@
+* {
+  font-family: "Poppins", sans-serif;
+  /* border: 1px solid black; */
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 32px;
+  margin-left: 32px;
+  margin-top: 32px;
+  height: 36px;
+}
+hero {
+  display: flex;
+  margin-top: 22px;
+  margin-left: 32px;
+  width: 90vw;
+}
+.herotext {
+  padding-top: 50px;
+}
+hero h2 {
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  color: #ff3998;
+}
+hero button {
+  background-color: transparent;
+  width: 188px;
+  height: 75px;
+  border: solid 3px;
+  border-radius: 36px;
+}
+hero p {
+  /* font-family:  */
+  color: rgb(75, 75, 75);
+}
+upsell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 326px;
+  background-image: url(/background.svg);
+  background-position: -20px;
+}
+press {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+.formobile {
+  overflow: hidden;
+  width: 139px;
+  min-width: 139px;
+}
+.formobile img {
+  height: 100%;
+  object-position: left;
+  object-fit: cover;
+}
+.showcasemargin {
+  padding-left: 32px;
+}
+.NFTdown {
+  background-color: rgb(233, 233, 233);
+  max-width: 290px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.upper {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 10px 20px;
+}
+
+.upper p {
+  font-size: 12px;
+  padding-top: 20px;
+}
+
+.gloop {
+  color: rgb(255, 155, 43);
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.price-tag {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-tag img {
+  padding-right: 10px;
+}
+
+.NFT-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: lightslategray;
+}
