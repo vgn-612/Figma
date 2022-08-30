@@ -18,7 +18,7 @@ hero {
   display: flex;
   margin-top: 22px;
   margin-left: 32px;
-  width: 90vw;
+  /* width: 90vw; */
 }
 .herotext {
   padding-top: 50px;
@@ -59,14 +59,18 @@ upsell p {
 press {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  width: 350px;
+  justify-content: space-around;
   padding: 32px;
+  padding-left: 10vw;
+}
+press img,
+press div {
+  height: 40px;
 }
 .formobile {
   overflow: hidden;
-  width: 139px;
-  min-width: 139px;
+  width: 130px;
 }
 .formobile img {
   height: 100%;
@@ -75,6 +79,9 @@ press {
 }
 .showcasemargin {
   padding-left: 32px;
+}
+showcase p a {
+  color: black;
 }
 .NFTdown {
   background-color: rgb(233, 233, 233);
@@ -121,11 +128,15 @@ press {
 .NFTblock {
   display: flex;
   justify-content: space-between;
+  margin-top: 60px;
 }
 .NFT2,
 .NFT3,
 .NFT4 {
   margin-left: 32px;
+}
+.NFT4 {
+  margin-right: 32px;
 }
 .divider {
   height: 0px;
@@ -142,6 +153,8 @@ press {
   margin-top: 22px;
   margin-left: 32px;
   width: 90vw;
+  max-width: 1050px;
+  justify-content: space-between;
 }
 .footerupselltext h2 {
   font-size: 16px;
@@ -156,16 +169,16 @@ press {
   border-radius: 36px;
 }
 .footerupselltext p {
-  /* font-family:  */
   color: rgb(75, 75, 75);
 }
 .upsellgraphic img {
   height: 450px;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 .footerupselltext h1 {
   font-size: 3rem;
 }
+
 .left p {
   color: rgb(75, 75, 75);
 }
@@ -183,6 +196,12 @@ press {
 }
 .right {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 300px;
+}
+.right div :first-child {
+  font-weight: bolder;
 }
 .right div {
   margin: 32px;
@@ -197,6 +216,19 @@ press {
 .desktop p a {
   color: rgb(255, 52, 140);
   text-decoration: none;
+}
+.footerup {
+  margin-top: 64px;
+}
+.footer-down {
+  margin-top: 32px;
+}
+.desktop.footer {
+  color: rgb(142, 142, 142);
+  margin-right: 32px;
+}
+footer {
+  margin-bottom: 32px;
 }
 @media only screen and (min-width: 575px) {
   body {
@@ -214,5 +246,39 @@ press {
   upsell {
     background-position: 0px;
     background-repeat: no-repeat;
+  }
+  press {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    width: auto;
+    padding-left: 32px;
+  }
+  .right {
+    /* display: flex; */
+    /* justify-content: space-around; */
+    flex-wrap: nowrap;
+    width: 50vw;
+    justify-content: space-around;
+  }
+  .right div {
+    margin: 2px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+  .footer-down {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+  }
+  .footerupselltext {
+    margin-top: 64px;
   }
 }
