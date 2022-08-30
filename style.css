@@ -3,7 +3,6 @@ body {
 }
 * {
   font-family: "Poppins", sans-serif;
-  /* border: solid 1px; */
 }
 header {
   display: flex;
@@ -243,9 +242,6 @@ footer {
   margin-bottom: 32px;
 }
 @media only screen and (min-width: 600px) {
-  body {
-    /* background-color: lightblue; */
-  }
   .formobile {
     width: auto;
   }
@@ -296,7 +292,6 @@ footer {
   }
 }
 logo {
-  /* border: #ff3998 1px solid; */
   border-radius: 36px;
   background-color: transparent;
   animation-name: logo;
