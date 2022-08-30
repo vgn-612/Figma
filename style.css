@@ -3,7 +3,7 @@ body {
 }
 * {
   font-family: "Poppins", sans-serif;
-  /* border: 1px solid black; */
+  /* border: solid 1px; */
 }
 header {
   display: flex;
@@ -18,25 +18,45 @@ hero {
   display: flex;
   margin-top: 22px;
   margin-left: 32px;
-  /* width: 90vw; */
+}
+.herographic {
+  overflow: hidden;
 }
 .herotext {
   padding-top: 50px;
+  width: 200px;
+  min-width: 200px;
 }
 hero h2 {
   font-size: 16px;
   letter-spacing: 0.1em;
   color: #ff3998;
 }
-hero button {
-  background-color: transparent;
-  width: 188px;
-  height: 75px;
-  border: solid 3px;
+.button {
+  margin-bottom: 32px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 60px;
+  background-image: url(/background.svg);
+  background-size: 160px;
   border-radius: 36px;
 }
+.button-inside {
+  width: 154px;
+  height: 54px;
+  background-color: white;
+  border-radius: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-inside:hover {
+  background-color: rgb(255, 52, 140);
+}
 hero p {
-  /* font-family:  */
   color: rgb(75, 75, 75);
 }
 upsell {
@@ -129,6 +149,7 @@ showcase p a {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  overflow: hidden;
 }
 .NFT2,
 .NFT3,
@@ -140,8 +161,7 @@ showcase p a {
 }
 .divider {
   height: 0px;
-  margin-left: 2px;
-  width: 98vw;
+  width: 95vw;
   border: 1px solid rgb(234, 234, 234);
   max-width: 1319px;
 }
@@ -152,7 +172,7 @@ showcase p a {
   display: flex;
   margin-top: 22px;
   margin-left: 32px;
-  width: 90vw;
+  width: 88vw;
   max-width: 1050px;
   justify-content: space-between;
 }
@@ -160,13 +180,6 @@ showcase p a {
   font-size: 16px;
   letter-spacing: 0.1em;
   color: #ff3998;
-}
-.footerupselltext button {
-  background-color: transparent;
-  width: 188px;
-  height: 75px;
-  border: solid 3px;
-  border-radius: 36px;
 }
 .footerupselltext p {
   color: rgb(75, 75, 75);
@@ -178,7 +191,6 @@ showcase p a {
 .footerupselltext h1 {
   font-size: 3rem;
 }
-
 .left p {
   color: rgb(75, 75, 75);
 }
@@ -230,7 +242,7 @@ showcase p a {
 footer {
   margin-bottom: 32px;
 }
-@media only screen and (min-width: 575px) {
+@media only screen and (min-width: 600px) {
   body {
     /* background-color: lightblue; */
   }
@@ -255,8 +267,6 @@ footer {
     padding-left: 32px;
   }
   .right {
-    /* display: flex; */
-    /* justify-content: space-around; */
     flex-wrap: nowrap;
     width: 50vw;
     justify-content: space-around;
@@ -280,5 +290,32 @@ footer {
   }
   .footerupselltext {
     margin-top: 64px;
+  }
+  .herotext {
+    width: auto;
+  }
+}
+logo {
+  /* border: #ff3998 1px solid; */
+  border-radius: 36px;
+  background-color: transparent;
+  animation-name: logo;
+  animation-duration: 4s;
+}
+@keyframes logo {
+  0% {
+    background-color: transparent;
+  }
+  25% {
+    background-color: rgb(255, 52, 140, 0.1);
+  }
+  50% {
+    background-color: rgb(255, 155, 43, 0.1);
+  }
+  75% {
+    background-color: rgb(155, 198, 129, 0.1);
+  }
+  100% {
+    background-color: transparent;
   }
 }
