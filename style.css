@@ -1,3 +1,6 @@
+body {
+  max-width: 1321px;
+}
 * {
   font-family: "Poppins", sans-serif;
   /* border: 1px solid black; */
@@ -39,11 +42,19 @@ hero p {
 upsell {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-end;
   height: 326px;
   background-image: url(/background.svg);
   background-position: -20px;
+  background-repeat: no-repeat;
+}
+upsell h1,
+upsell p {
+  margin-left: 32px;
+}
+upsell p {
+  margin-bottom: 64px;
 }
 press {
   display: flex;
@@ -118,8 +129,10 @@ press {
 }
 .divider {
   height: 0px;
-  width: 100vw;
+  margin-left: 2px;
+  width: 98vw;
   border: 1px solid rgb(234, 234, 234);
+  max-width: 1319px;
 }
 .space94px {
   height: 94px;
@@ -173,4 +186,33 @@ press {
 }
 .right div {
   margin: 32px;
+}
+.desktop {
+  display: none;
+}
+.desktop p {
+  color: rgb(106, 106, 106);
+  margin-right: 10px;
+}
+.desktop p a {
+  color: rgb(255, 52, 140);
+  text-decoration: none;
+}
+@media only screen and (min-width: 575px) {
+  body {
+    /* background-color: lightblue; */
+  }
+  .formobile {
+    width: auto;
+  }
+  .fa-bars {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+  }
+  upsell {
+    background-position: 0px;
+    background-repeat: no-repeat;
+  }
 }
